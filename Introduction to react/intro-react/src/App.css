@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  color: white;
+}
+*{
+  margin: 0;
+}
+.header{
+  background-color:red; 
+}
+.container{
+  height: 80vh;
+  display: flex;
+}
+.main{
+  width: 60%;
+  background-color: green;
+}
+.aside{
+  width: 40%;
+  background-color: yellow;
+}
+.footer{
+  padding: 19px 0px;
+  background-color: skyblue;
+}
