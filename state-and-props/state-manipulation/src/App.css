@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.header{
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 3px 2px white;
+}
+
+
