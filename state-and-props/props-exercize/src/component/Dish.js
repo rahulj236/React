@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
 
 class Dish extends Component {
-    constructor() {
-        super();
-
-    }
-    // printConsole = (price)=>{
-    //     console.log("Price",price);
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         key: this.props.key
+    //     }
     // }
+    handleClick = (price,status)=>{
+        console.log(`Price: ${price} \n Status: ${status}`);
+    }
     render() {
-        // console.log(this.props.dish);
-        let { name, desc, price, status } = this.props.dish
+        let { name, desc, price, status} = this.props.dish;
+        // console.log("key..",this.props.key);
         return (
-
-            // <section onClick={this.printConsole(price)}>
-            <section>
+            
+            <section onClick={()=>{this.handleClick(price,status)}} className="dish-card">
+                
                 <h2>
-                    Name: {name};
+                    Name: {name}
                 </h2>
                 <p>
-                    Desc: {desc};
-                </p>
-                <p>
-                    Price: {price};
-                </p>
-                <p>
-                    Status: {status};
+                    <b>Description: </b>  {desc};
                 </p>
             </section>
         )

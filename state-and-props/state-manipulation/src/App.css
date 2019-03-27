@@ -7,5 +7,21 @@
   text-transform: uppercase;
   text-shadow: 3px 2px white;
 }
-
+.headline{
+  font-size: 3em;
+  text-transform: uppercase;
+  border-bottom: 4px dashed black 
+}
+.btn-lt{
+  margin-top: 30px;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 15px;
+}
+.btn-lt:hover{
+  background: transparent;
+  color: green;
+  box-shadow: 5px 10px #888888;
+  border: 3px dashed white;
+}
 

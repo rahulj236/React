@@ -1,13 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Dish from './Dish';
 
-class DishList extends Component{
-    render(){
-        return(
+class DishList extends Component {
+   
+    render() {
+        return (
             <section>
-                {this.props.dishes.map((item,index)=>{
-                    return <Dish dish={item} key={index} />
-                })}
+                {
+                    this.props.dishes.map((item, index) => {
+                        // console.log("index..",index);
+                        return <Dish key={index} dish={item} />
+                    })
+                }
             </section>
         )
     }
