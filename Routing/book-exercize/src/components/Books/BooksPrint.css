@@ -1,0 +1,27 @@
+.card {
+    margin: 50px 20px;
+    width: 20%;
+    min-height: 358px;
+    transition: 0.3s;
+    background-color: burlywood;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0,0,0,0.7);
+    text-decoration: none;
+    display: inline-block;
+}
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.7);
+}
+.card a {
+    text-decoration: none;
+}
+.card h2 {
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+}
+.card img {
+    width: 150px;
+    height: 250px;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Login.css';
 
 class Login extends Component {
     constructor(props) {
@@ -23,8 +24,8 @@ class Login extends Component {
     render() {
         // console.log(isLogin, '#############');
         return (
-            <div>
-                <h1>Login Page</h1>
+            <div className="form">
+                <h2>Login Page</h2>
 
                 <form onSubmit={(event)=>{
                         this.props.history.push('/booklist')
