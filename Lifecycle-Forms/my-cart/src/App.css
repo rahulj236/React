@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.heading{
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 15px;
+}
+
+ul,li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.total{
+  margin: 0px 26px 0px 20px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(67, 102, 185,0.9);
+}
+
+.total ul {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+

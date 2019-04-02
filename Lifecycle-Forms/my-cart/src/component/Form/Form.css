@@ -1,0 +1,21 @@
+.form{
+    margin-bottom: 20px;
+}
+.form input{
+    width:70%;
+    margin-right: 10px;
+    padding: 12px 10px;
+    /* color:grey; */
+    font-weight: 500;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 19px;
+    background: white;
+    border: 2px solid lightgrey;
+}
+.form input[type=submit]{
+    width: 20%;
+    cursor: pointer;
+    color: #2E8240;
+    background-color: #DAF6D7;
+}
