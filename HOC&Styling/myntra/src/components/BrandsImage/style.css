@@ -1,0 +1,19 @@
+.brandName{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #282C3F;
+    margin: 25px 0px 25px 50px;
+}
+    
+.subName{
+    display: block;
+    font-size: 15px;
+    margin-left: 3px;
+    text-transform: none;
+}
+.brand-container{
+    padding: 0px;
+}
+.figure{
+    cursor: pointer;
+}
