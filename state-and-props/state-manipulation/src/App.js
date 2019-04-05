@@ -10,7 +10,7 @@ class App extends Component {
       counters: [
         { name: "Counter 1", count: 0, index: 0 },
         { name: "Counter 2", count: 0, index: 1 },
-        { name: "Counter 3", count: 0, index: 2 },
+        { name: "Counter 3", count: 0, index: 2 }
       ]
     }
   }
