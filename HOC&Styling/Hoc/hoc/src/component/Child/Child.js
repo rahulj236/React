@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
-import MyContext from '../../MyContext';
+import Hoc from '../Hoc/Hoc';
 
-export default class Child extends Component{
-    constructor(){
-        super();
-        this.state={
-            social_life:'girlfriend'
-        }
-    }
- 
+class Child extends Component{
+    
     render(){
-        console.log(this.context);
+        console.log("@@@@@@@2",this.props.value);
+        let {username,phone,isLogin} = this.props.value;
         return(
-            <div>
-                
-            </div>
+            
+            <fieldset>
+                <legend>User Details</legend>
+                Name: {username}
+                <br/>
+                Phone: {phone}
+                <br/>
+                Authenticated: {isLogin}
+            </fieldset>
         )
     }
 }
 
-
-Child.contextType=MyContext;
+export default Hoc(Child)

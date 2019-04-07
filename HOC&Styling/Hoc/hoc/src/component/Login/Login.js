@@ -5,22 +5,26 @@ class Login extends Component {
         super();
         this.state = {
             loginUser: {
-                username:'',
-                password:''
+                username: '',
+                password: '',
+                phone: ''
             }
         }
     }
 
     HandleOnChange = (e) => {
         this.setState({
-            loginUser: {...this.state.loginUser, [e.target.name]:[e.target.value] }
-            
+            loginUser: { ...this.state.loginUser, [e.target.name]: e.target.value }
+
         })
     }
 
     render() {
         return (
-            <form action="" onSubmit={(event)=>this.props.handleOnSubmit(event,this.state.loginUser)}>
+            <form action="" onSubmit={(event) => {
+                this.props.history.push('/userDetails');
+                this.props.handleOnSubmit(event, this.state.loginUser)
+            }}>
                 <label htmlFor="name">Username</label>
                 <input
                     type="text"
@@ -36,6 +40,15 @@ class Login extends Component {
                     name="password"
                     id="pwd"
                     value={this.state.password}
+                    onChange={this.HandleOnChange}
+                />
+
+                <label htmlFor="mobileNo">Phone No.</label>
+                <input
+                    type="number"
+                    name="phone"
+                    id="mobileNo"
+                    value={this.state.phone}
                     onChange={this.HandleOnChange}
                 />
 
