@@ -21,39 +21,43 @@ class Login extends Component {
 
     render() {
         return (
-            <form action="" onSubmit={(event) => {
-                this.props.history.push('/userDetails');
-                this.props.handleOnSubmit(event, this.state.loginUser)
-            }}>
-                <label htmlFor="name">Username</label>
-                <input
-                    type="text"
-                    name="username"
-                    id="name"
-                    value={this.state.username}
-                    onChange={this.HandleOnChange}
-                />
+            <div className="form">
+            <h1>Sign In</h1>
+                <form action="" onSubmit={(event) => {
+                    this.props.history.push('/userDetails');
+                    this.props.handleOnSubmit(event, this.state.loginUser)
+                }}>
+                    <label htmlFor="name">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="name"
+                        value={this.state.username}
+                        onChange={this.HandleOnChange}
+                    />
 
-                <label htmlFor="pwd">Password</label>
-                <input
-                    type="password"
-                    name="password"
-                    id="pwd"
-                    value={this.state.password}
-                    onChange={this.HandleOnChange}
-                />
+                    <label htmlFor="pwd">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="pwd"
+                        value={this.state.password}
+                        onChange={this.HandleOnChange}
+                    />
 
-                <label htmlFor="mobileNo">Phone No.</label>
-                <input
-                    type="number"
-                    name="phone"
-                    id="mobileNo"
-                    value={this.state.phone}
-                    onChange={this.HandleOnChange}
-                />
+                    <label htmlFor="mobileNo">Phone No.</label>
+                    <input
+                        type="number"
+                        name="phone"
+                        id="mobileNo"
+                        value={this.state.phone}
+                        onChange={this.HandleOnChange}
+                    />
 
-                <input type="submit" value="Login" />
-            </form>
+                    <input type="submit" value="Login" />
+                </form>
+            </div>
+
         )
     }
 }

@@ -35,7 +35,8 @@ class App extends Component {
         <Router>
 
           <Route
-            path="/Login"
+            exact
+            path="/"
             render={(props) => <Login {...props} handleOnSubmit={this.handleOnSubmit} />}
           />
 
