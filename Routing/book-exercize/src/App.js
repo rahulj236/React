@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Login from './components/Login/Login'
 import userDetails from './components/UserDetails';
 import BookList from './components/BookList/BookList'
@@ -41,13 +41,11 @@ class App extends Component {
       <div className="App">
 
         <Router>
-          <Link to="/login">
-            Go to Login
-          </Link>
+          
 
           <Route
             exact
-            path="/login"
+            path="/"
             render={(props) =>  <Login {...props} handleOnSubmit={this.handleOnSubmit}/> }
           />
 
